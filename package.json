@@ -1,6 +1,6 @@
 {
   "name": "hackbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Discord bot for the University of Leeds HackSoc",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,7 @@
     "discord.js": "^11.3.0",
     "erlpack": "github:discordapp/erlpack",
     "libsodium-wrappers": "^0.7.3",
+    "mongoose": "^5.0.1",
     "node-opus": "^0.2.7",
     "opusscript": "0.0.6",
     "sodium": "^2.0.3",
