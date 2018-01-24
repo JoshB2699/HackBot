@@ -1,6 +1,6 @@
 {
   "name": "hackbot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Discord bot for the University of Leeds HackSoc",
   "main": "index.js",
   "scripts": {

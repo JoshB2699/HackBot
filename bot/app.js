@@ -14,6 +14,7 @@ mongoose.set('debug', true);
 //Connect to Discord.
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setPresence({ status: 'online', game: { name: config.commandPrefix + 'help for commands' } });
 });
 
 //When a message is sent look if the message was a command and run it.
@@ -23,6 +24,10 @@ client.on('message', msg => {
     require('./commands/help.js')(msg);
   }
 
+});
+
+client.on("guildMemberAdd", (member) => {
+  member.send("Please private message anyone with the Administrator or Committee role to confirm your membership!");
 });
 
 client.login(config.botToken);
